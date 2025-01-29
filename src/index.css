@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
+@theme {
+  
     --background: #000000;
     --text: #e7e9ea;
     --secondary-text: #71767b;
@@ -14,10 +14,12 @@
     --twitter-light-gray: #aab8c2;
     --twitter-extra-light-gray: #e1e8ed;
     --twitter-background: #15202b;
-  }
+  
 }
 
 body {
   background-color: var(--twitter-background);
   color: white;
 }
+
+
