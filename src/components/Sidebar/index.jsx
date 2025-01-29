@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faBell, faBookmark, faEllipsisH, faEnvelope, faFeatherAlt, faHashtag, faHome, faUser, faUserFriends } from '@fortawesome/free-solid-svg-icons'
 
 const Navitem = ({ icon, text }) => (
 
@@ -22,8 +23,31 @@ export function Sidebar() {
 
 
             <FontAwesomeIcon icon={faTwitter} className='text-blue-400 text-3xl m-4' />
+            <nav>
+
+                <Navitem icon={faHome} text='Home' />
+                <Navitem icon={faHashtag} text='Explore' />
+                <Navitem icon={faBell} text='Notification' />
+                <Navitem icon={faEnvelope} text='Messages' />
+                <Navitem icon={faBookmark} text='Favorites' />
+                <Navitem icon={faUserFriends} text='Communities' />
+                <Navitem icon={faTwitter} text='Premium' />
+                <Navitem icon={faUser} text='Profile' />
+                <Navitem icon={faEllipsisH} text='More' />
 
 
+            </nav>
+
+            <button className='bg-blue-400 text-white rounded-full font-bold px-4 py-3 mt-4 w-full cursor-pointer flex items-center text-center justify-center hover:opacity-80 transition-all duration-300 hover:scale-105'>
+
+                <FontAwesomeIcon
+                    icon={faFeatherAlt}
+                    className="text-blue-400 text-3xl m-4 inline xl:!hidden"
+                />
+
+                <span className='hidden xl:inline'>Twitter</span>
+
+            </button>
 
 
         </div>
