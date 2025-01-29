@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #000000;
+    --text: #e7e9ea;
+    --secondary-text: #71767b;
+    --border: #2f3336;
+    --primary: #1d9bf0;
+    --hover: #181818;
+    --twitter-blue: #1da1f2;
+    --twitter-black: #14171a;
+    --twitter-dark-gray: #657786;
+    --twitter-light-gray: #aab8c2;
+    --twitter-extra-light-gray: #e1e8ed;
+    --twitter-background: #15202b;
+  }
+}
+
+body {
+  background-color: var(--twitter-background);
+  color: white;
+}
