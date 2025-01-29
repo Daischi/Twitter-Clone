@@ -16,17 +16,23 @@ return (
 
             <div className="flex space-x-4">
 
-                <FontAwesomeIcon icon={faImage} className="text-blue-400 cursor-pointer"/>
-                <FontAwesomeIcon icon={faFilm} className="text-blue-400 cursor-pointer"/>
-                <FontAwesomeIcon icon={faChartBar} className="text-blue-400 cursor-pointer"/>
-                <FontAwesomeIcon icon={faSmile} className="text-blue-400 cursor-pointer"/>
-                <FontAwesomeIcon icon={faCalendarAlt} className="text-blue-400 cursor-pointer"/>
-                <FontAwesomeIcon icon={faMapMarkedAlt} className="text-blue-400 cursor-pointer"/>
+                <FontAwesomeIcon icon={faImage} className="text-blue-400 cursor-pointer hover:scale-105 transition-all duration-300 hover:opacity-80 "/>
+                <FontAwesomeIcon icon={faFilm} className="text-blue-400 cursor-pointer hover:scale-105 transition-all duration-300 hover:opacity-80  "/>
+                <FontAwesomeIcon icon={faChartBar} className="text-blue-400 cursor-pointer hover:scale-105 transition-all duration-300 hover:opacity-80 "/>
+                <FontAwesomeIcon icon={faSmile} className="text-blue-400 cursor-pointer hover:scale-105 transition-all duration-300 hover:opacity-80 "/>
+                <FontAwesomeIcon icon={faCalendarAlt} className="text-blue-400 cursor-pointer hover:scale-105 transition-all duration-300 hover:opacity-80 "/>
+                <FontAwesomeIcon icon={faMapMarkedAlt} className="text-blue-400 cursor-pointer hover:scale-105 transition-all duration-300 hover:opacity-80 "/>
 
             </div>
 
-    </div>
+            <button className="bg-blue-400 text-white font-bold px-4 py-2 rounded-full hover:opacity-80 cursor-pointer hover:scale-105 transition-all duration-300">
 
+            Tweet
+
+        </button>
+
+    </div>
+        
 
     </div>
 
