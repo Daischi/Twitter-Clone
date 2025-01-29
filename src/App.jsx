@@ -1,5 +1,6 @@
 
 import {Sidebar} from './components/Sidebar/index'
+import { TwitterForm } from './components/TwitterForm'
 function App() {
   
 
@@ -18,6 +19,9 @@ function App() {
 
 
           </header>
+
+
+          <TwitterForm/>
         </main>
 
 
