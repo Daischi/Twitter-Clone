@@ -65,8 +65,8 @@ function App() {
 
 
         <div>
-
-          <Tweet />
+          {tweets.map(tweet => (<Tweet key={tweet.id} tweet={tweet}/>))}
+         
 
         </div>
       </main>
