@@ -1,9 +1,9 @@
 import { faCalendarAlt, faChartBar, faFilm, faImage, faMapMarkedAlt, faSmile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export function TwitterForm (){
+export function TwitterForm ({onTweet}){
 
-
+    function handleSubmit (){}
 return (
 
 
@@ -25,7 +25,7 @@ return (
 
             </div>
 
-            <button className="bg-blue-400 text-white font-bold px-4 py-2 rounded-full hover:opacity-80 cursor-pointer hover:scale-105 transition-all duration-300">
+            <button className="bg-blue-400 text-white font-bold px-4 py-2 rounded-full hover:opacity-80 cursor-pointer hover:scale-105 transition-all duration-300" onClick={handleSubmit}>
 
             Tweet
 
