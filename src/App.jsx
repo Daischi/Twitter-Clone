@@ -4,11 +4,18 @@ import { Tweet } from './components/Tweet'
 import { TwitterForm } from './components/TwitterForm'
 import { v4 } from 'uuid'
 import { getAvatar, getRandomImage } from './utils/generateImages'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
   const [tweets, setTweets] = useState([])
 
+    useEffect(() => {
+
+
+
+
+    }, [tweets])
+  
 
   const addNewTweet = (content, includeImage = false) => {
     const newTweet = {
@@ -54,7 +61,7 @@ function App() {
         </header>
 
 
-        <TwitterForm />
+        <TwitterForm onTweet={(conteudo) => addNewTweet (conteudo, Math.random() > 0.6)}/>
 
 
         <div>

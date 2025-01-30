@@ -1,15 +1,27 @@
 import { faCalendarAlt, faChartBar, faFilm, faImage, faMapMarkedAlt, faSmile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {useRef} from 'react';
 
 export function TwitterForm ({onTweet}){
 
-    function handleSubmit (){}
+    const textAreaRef = useRef()
+
+    function handleSubmit (){
+
+        if (textAreaRef.current.value){
+        onTweet(textAreaRef.current.value)
+        textAreaRef.current.value = ''
+    }
+
+    }
 return (
 
 
     <div className="p-4 border-b-2 border-gray-800">
 
-        <textarea className="w-full bg-transparent text-white text-xl resize-none outline-none" placeholder="What's happening ?"></textarea>
+        <textarea 
+        ref={textAreaRef}
+        className="w-full bg-transparent text-white text-xl resize-none outline-none" placeholder="What's happening ?"></textarea>
 
 
     <div className="flex justify-between items-center mt-4">
