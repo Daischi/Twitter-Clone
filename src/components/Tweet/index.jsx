@@ -55,7 +55,7 @@ export function Tweet({ tweet }) {
 
                             </div>
                             <div className="flex items-center cursor-pointer ">
-                                <FontAwesomeIcon icon={faLifeRing} onClick={() => handleAction('like')}/>
+                                <FontAwesomeIcon icon={fa} onClick={() => handleAction('like')}/>
                                 <span className="ml-2">0</span>
 
                             </div>
