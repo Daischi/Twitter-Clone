@@ -1,4 +1,4 @@
-import { faComment, faEllipsisH, faLifeRing, faRetweet } from "@fortawesome/free-solid-svg-icons";
+import { faChartBar, faComment, faEllipsisH, faHeader, faHeart, faLifeRing, faRetweet, faUpload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function Tweet({ tweet }) {
@@ -44,24 +44,31 @@ export function Tweet({ tweet }) {
 
                         <div className="flex justify-between mt-4 text-gray-500">
 
-                            <div className="flex items-center cursor-pointer ">
+                            <div className="flex items-center cursor-pointer hover:text-blue-400">
                                 <FontAwesomeIcon icon={faComment} onClick={() => handleAction('comment')}/>
                                 <span className="ml-2">0</span>
 
                             </div>
-                            <div className="flex items-center cursor-pointer ">
+                            <div className="flex items-center cursor-pointer hover:text-green-300">
                                 <FontAwesomeIcon icon={faRetweet} onClick={() => handleAction('retweet')}/>
                                 <span className="ml-2">0</span>
 
                             </div>
-                            <div className="flex items-center cursor-pointer ">
-                                <FontAwesomeIcon icon={fa} onClick={() => handleAction('like')}/>
+
+                            <div className="flex items-center cursor-pointer hover:text-pink-300">
+                                <FontAwesomeIcon icon={faHeart} onClick={() => handleAction('like')}/>
+                                <span className="ml-2">0</span>
+
+                            </div>
+                            <div className="flex items-center cursor-pointer hover:text-pink-300">
+                                <FontAwesomeIcon icon={faChartBar} onClick={() => handleAction('like')}/>
                                 <span className="ml-2">0</span>
 
                             </div>
                             <div className="flex items-center cursor-pointer ">
-                                <FontAwesomeIcon icon={faComment} onClick={() => handleAction('commente')}/>
-                                <span className="ml-2">0</span>
+                                <FontAwesomeIcon icon={faUpload} />
+                                
+
 
                             </div>
 
