@@ -12,7 +12,7 @@ Um clone simplificado do Twitter, desenvolvido com **React** e **Tailwind CSS**,
 
 ## 📸 Captura de Tela
 
-![Preview do Twitter Clone](https://via.placeholder.com/800x400?text=Preview+do+Twitter+Clone)
+![Preview do Twitter Clone](/src/assets/preview.png)
 
 ## 🛠 Como Rodar o Projeto
 
