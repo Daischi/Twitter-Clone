@@ -18,7 +18,7 @@ function App() {
     const interval = setInterval(() => {
       addNewRandomTweet()
 
-    }, 10000)
+    }, 3000)
     return () => clearInterval(interval)
   }, [])
 
