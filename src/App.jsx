@@ -13,12 +13,13 @@ function App() {
 
 
   useEffect(() => {
-    const interval = setInterval(() => {addNewRandomTweet()
-      
+    const interval = setInterval(() => {
+      addNewRandomTweet()
+
     }, 10000)
-    return() => clearInterval(interval)
+    return () => clearInterval(interval)
   }, [])
-  
+
   const addNewRandomTweet = () => {
     const randomTweets = [
       'Acabei de entrar no clone do Twitter! Estou animado para me conectar com todos aqui. 👋 #NovoUsuário',
@@ -60,23 +61,23 @@ function App() {
       'Sabe aquela sensação de quando um código funciona de primeira? Raro, mas incrível! 🎉 #DevFeliz',
       'Qual foi o erro mais bizarro que você já encontrou ao programar? 😂 #FalhaÉAprendizado',
       'Escrever código pode ser difícil, mas consertar código de outra pessoa é um nível acima! 🧐 #DesafioDev'
-  ];
-  
+    ];
 
 
-    const randomTweet = randomTweets [Math.floor(Math.random() * randomTweets.length)]
+
+    const randomTweet = randomTweets[Math.floor(Math.random() * randomTweets.length)]
 
 
     addNewTweet(randomTweet, Math.random() > 0.7)
-}
+  }
 
-    useEffect(() => {
-
-
+  useEffect(() => {
 
 
-    }, [tweets])
-  
+
+
+  }, [tweets])
+
 
   const addNewTweet = (content, includeImage = false) => {
     const newTweet = {
@@ -85,15 +86,15 @@ function App() {
       username: `user${Math.floor(Math.random() * 1000)}`,
       avatar: getAvatar(`user${Math.floor(Math.random() * 1000)} @gmail.com`),
       content,
-      time: new Date().toLocaleString([],{
-        
+      time: new Date().toLocaleString([], {
+
         hour: '2-digit',
         minute: '2-digit'
 
 
 
       }),
-      Image: includeImage ? getRandomImage(): null,
+      Image: includeImage ? getRandomImage() : null,
       likes: 0,
       retweets: 0,
       comments: 0,
@@ -102,8 +103,8 @@ function App() {
     setTweets((prevTweets) => [newTweet, ...prevTweets])
 
   }
-  
-  
+
+
 
   return (
 
@@ -122,12 +123,12 @@ function App() {
         </header>
 
 
-        <TwitterForm onTweet={(conteudo) => addNewTweet (conteudo, Math.random() > 0.6)}/>
+        <TwitterForm onTweet={(conteudo) => addNewTweet(conteudo, Math.random() > 0.6)} />
 
 
         <div>
-          {tweets.map(tweet => (<Tweet key={tweet.id} tweet={tweet}/>))}
-         
+          {tweets.map(tweet => (<Tweet key={tweet.id} tweet={tweet} />))}
+
 
         </div>
       </main>
@@ -137,14 +138,37 @@ function App() {
 
           <div className='relative'>
 
-          <FontAwesomeIcon icon={faSearch} className='absolute top-3 left-3 text-gray-500'/>
-          <input placeholder='Search Twitter' className='w-full bg-gray-800 outline-none rounded-full py-2 pl-10 pr-4 text-white'/>
+            <FontAwesomeIcon icon={faSearch} className='absolute top-3 left-3 text-gray-500' />
+            <input placeholder='Search Twitter' className='w-full bg-gray-800 outline-none rounded-full py-2 pl-10 pr-4 text-white' />
 
 
           </div>
 
 
-          
+
+
+          <div className='bg-gray-800 rounded-xl mt-4 p-4'>
+
+            <h2 className='font-bold text-xl mb-4 '>Subscribe to Premium</h2>
+            <p className='text-gray-400 mb-4'>
+              Subscribe to unlock new features and, if eligible, receive a share of the revenue.
+            </p>
+            <button className='bg-[var(--twitter-blue)] text-white font-bold py-2 px-4 rounded-full hover:bg-blue-500 duration-300 transition-all hover:scale-105'>
+
+              Subscribe
+            </button>
+          </div>
+
+
+          <div className='bg-gray-800 rounded-xl mt-4 p-4'>
+            <h2 className='font-bold text-xl mb-4'>Whats happening</h2>
+            <TrendItem category="NFL · LIVE" name="Cardinals at Bills" />
+            <TrendItem category="Sports · Trending" name="Kyle Dugger" />
+            <TrendItem category="Sports · Trending" name="Anthony Richardson" tweetCount="13,445" />
+            <TrendItem category="Sports · Trending" name="Bryce Young" tweetCount="5,455" />
+            <TrendItem category="Sports · Trending" name="Daboll" tweetCount="1,342" />
+          </div>
+
         </div>
 
 

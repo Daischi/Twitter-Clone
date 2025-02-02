@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faBell, faBookmark, faEllipsisH, faEnvelope, faFeatherAlt, faHashtag, faHome, faUser, faUserFriends } from '@fortawesome/free-solid-svg-icons'
+import PropTypes from 'prop-types'; // ES6
 
 const Navitem = ({ icon, text }) => (
 
@@ -58,3 +59,7 @@ export function Sidebar() {
 
 }
 
+Navitem.propTypes = {
+    icon: PropTypes.any.isRequired, 
+    text: PropTypes.string.isRequired 
+};

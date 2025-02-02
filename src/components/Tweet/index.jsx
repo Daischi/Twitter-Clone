@@ -1,6 +1,8 @@
-import { faChartBar, faComment, faEllipsisH, faHeader, faHeart, faLifeRing, faRetweet, faUpload } from "@fortawesome/free-solid-svg-icons";
+import { faChartBar, faComment, faEllipsisH, faHeart,faRetweet, faUpload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import PropTypes from 'prop-types'; // ES6
+
 
 export function Tweet({ tweet }) {
     const [comments, setComments] = useState(0)
@@ -106,15 +108,12 @@ export function Tweet({ tweet }) {
     )
 
 
+}
+
+Tweet.propTypes = {
 
 
-
-
-
-
-
-
-
+    tweet: PropTypes.func
 
 
 }
