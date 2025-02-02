@@ -86,11 +86,7 @@ Contribuições são bem-vindas! Para sugerir melhorias ou correções:
 4. Envie para o repositório: `git push origin minha-feature`
 5. Abra um **Pull Request** 🚀
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Sinta-se livre para utilizá-lo e melhorá-lo! 🛠
-
 ---
 
-Desenvolvido com ❤️ por [Seu Nome](https://github.com/seu-usuario)
+Desenvolvido com ❤️ por [Guilherme Poppi](https://github.com/Daischi)
 
