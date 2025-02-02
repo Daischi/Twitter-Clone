@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { TrendItem } from './components/TrendItem'
+import { FollowItem } from './components/FollowItem'
 
 function App() {
   const [tweets, setTweets] = useState([])
@@ -168,6 +169,17 @@ function App() {
             <TrendItem category="Sports · Trending" name="Anthony Richardson" tweetCount="13,445" />
             <TrendItem category="Sports · Trending" name="Bryce Young" tweetCount="5,455" />
             <TrendItem category="Sports · Trending" name="Daboll" tweetCount="1,342" />
+          </div>
+
+
+          <div className='bg-gray-800 rounded-xl mt-4 p-4'>
+            <h2 className='font-bold text-xl mb-4'>Who to follow</h2>
+            <FollowItem name="Elon Musk" username="elonmusk" />
+            <FollowItem name="Jeff Bezos" username="jeffbezos" />
+            <FollowItem name="Oprah Winfrey" username="oprah" />
+            <FollowItem name="Cristiano Ronaldo" username="cristiano" />
+           
+
           </div>
 
         </div>
