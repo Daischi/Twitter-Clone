@@ -43,7 +43,7 @@ export function Sidebar() {
 
                 <FontAwesomeIcon
                     icon={faFeatherAlt}
-                    className="text-blue-400 text-3xl m-4 inline xl:!hidden"
+                    className="text-white text-3xl inline xl:!hidden"
                 />
 
                 <span className='hidden xl:inline'>Twitter</span>

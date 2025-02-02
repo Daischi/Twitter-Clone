@@ -7,6 +7,7 @@ import { getAvatar, getRandomImage } from './utils/generateImages'
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { TrendItem } from './components/TrendItem'
 
 function App() {
   const [tweets, setTweets] = useState([])
